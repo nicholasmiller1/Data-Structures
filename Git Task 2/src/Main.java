@@ -7,8 +7,7 @@ public class Main {
 		System.out.println("Enter two integers:");
 		int a = scan.nextInt();
 		int b = scan.nextInt();
-		int c = scan.nextInt();
-		System.out.println("The average is: " + ((double) (a+c))/2);
+		System.out.println("The average is: " + ((double) (a+b))/2);
 	}
 
 }
