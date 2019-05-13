@@ -10,6 +10,10 @@ public class Location extends Actor {
         this.y = y;
     }
     
+    public void act() {
+        removeTouching(Location.class);
+    }
+    
     public String toString() {
         return "(" + x + ", " + y + ")";
     }
