@@ -69,9 +69,10 @@ public class MyWorld extends World {
     }
 
     public List<Edge> PrimsAlgorithm() {
-        List<Location> visited = new ArrayList();
+        List<Location> visited = new ArrayList<Location>();
         visited.add(locations.get(0));
-        List<Location> unvisited = locations.subList(1,locations.size());
+        List<Location> unvisited = new ArrayList<Location>();
+        unvisited = locations.subList(1,locations.size());
         List<Edge> edges = new ArrayList<Edge>();
         while ( !unvisited.isEmpty() ) {
             Edge shortestEdge = new Edge(visited.get(0), unvisited.get(0));
@@ -89,5 +90,15 @@ public class MyWorld extends World {
         }
         drawEdges(edges);
         return edges;
+    }
+    
+    public void clearEdges() {
+        setBackground("WorldMap.PNG");
+    }
+    
+    public void clearLocations() {
+        locations.clear();
+        removeObjects( getObjects(Location.class) );
+        clearEdges();
     }
 }
