@@ -5,3 +5,9 @@ stringTest xs y
 
 stringTestList :: [String] -> [String]
 stringTestList xs = map (stringTest) xs
+
+splitString :: String -> [String]
+splitString xs
+  | (length xs) >= 20 = (take 20 xs):(splitString (drop 20 xs))
+  | (length xs) == 0 = []
+  | otherwise = [xs]
