@@ -1,7 +1,11 @@
-# **test-repository**
+# Data-Structures
 
-(contains tests for learning git)
+Projects I worked on for my Data Structures class
 
 ## *Git Task 2*
 
-Program that averages two numbers. Has a couple of mistakes.
+Simple program to use in practicing git
+
+## *Mapfoot Project*
+
+Experimental graph theory work implementing visually some common algorithms
