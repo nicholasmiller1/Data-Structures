@@ -9,3 +9,7 @@ Simple program to use in practicing git
 ## *Mapfoot Project*
 
 Experimental graph theory work implementing visually some common algorithms
+
+## *Manipulation.hs*
+
+Short haskell code
